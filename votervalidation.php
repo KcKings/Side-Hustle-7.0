@@ -23,4 +23,5 @@ else{
     echo "This Voter don meet all the requirements!"."\n";
     echo "Allow am to vote."."\n";
 }
+//I hope we learn how to control user inputs soon
 ?>
