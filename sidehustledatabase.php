@@ -18,7 +18,7 @@
         echo "Unable to connect";
     }
 
-    $put_data = mysqli_query($connection, "INSERT INTO guest-profile(Name) VALUES('Dan')");
+    $put_data = mysqli_query($connection, "INSERT INTO alex (name,password) VALUES('King','dan123')");
 
         if($put_data){
             echo "data saved successfully";

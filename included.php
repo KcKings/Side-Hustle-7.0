@@ -1,5 +1,5 @@
 <?php
-    echo "Welcome to the week";
+    echo "Welcome";
 
     $connection = mysqli_connect("localhost", "root", "", "sidehustle.db");
 ?>
