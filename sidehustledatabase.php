@@ -8,6 +8,16 @@
 </head>
 <body>
     <?php
+    function times($a, $b, $c=5){
+        $d = $a*$b*$c;
+        echo $d;
+    }
+    times(2, 4);   '/n'
+    ?>
+    
+    <br><br>
+    
+    <?php
         include 'included.php'
     ?>
     <p>Let's get started with Connecting our page to our DataBase</p>
