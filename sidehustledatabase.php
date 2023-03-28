@@ -8,6 +8,11 @@
 </head>
 <body>
     <?php
+        function times3 (a, b, c=5){
+            echo 'a*b*c';
+            }
+    ?>
+    <?php
         include 'included.php'
     ?>
     <p>Let's get started with Connecting our page to our DataBase</p>
