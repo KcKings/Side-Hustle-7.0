@@ -25,17 +25,19 @@
         if ($connection) {
             echo "Connected to the Database successfully";
         }else{
-        echo "Unable to connect";
-    }
-
-    $put_data = mysqli_query($connection, "INSERT INTO alex (name,password) VALUES('King','dan123')");
-
-        if($put_data){
-            echo "data saved successfully";
-        }else{
-            echo "We are not There yet:";
+        echo "Unable to connect";   '/n'
         }
-    ?>
+            
+    $put_data = mysqli_query($connection, "INSERT INTO students (name,age,gender) VALUES('Bose','20','F')" );
+
+        if(!$put_data){
+            echo "We are not There yet:". mysqli_error($connection);
+           
+        }
+        else{
+            echo "Data saved successfully".'<br>';
+        }
+    ?>-
     
 </body>
 </html>
