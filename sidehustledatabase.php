@@ -25,7 +25,7 @@
         if ($connection) {
             echo "Connected to the Database successfully";
         }else{
-        echo "Unable to connect";   '/n'
+        echo "Unable to connect";
         }
             
     $put_data = mysqli_query($connection, "INSERT INTO students (name,age,gender) VALUES('Bose','20','F')" );
