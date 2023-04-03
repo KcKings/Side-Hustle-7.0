@@ -13,15 +13,15 @@
     <h2>Students</h2>
     <form action="process.php" method="post">
         <label for="">Name:</label>
-        <input type="text" name="student-name" id="" required>
+        <input type="text" name="student-name" id="" required><br><br>
         <label for="">Age:</label>
-        <input type="text" name="student-age" id="" required>
+        <input type="text" name="student-age" id="" required><br><br>
         <label for="">Gender</label>
         <select name="student-gender" id="" required>
             <option value="">Select Gender</option>
             <option value="M">Male</option>
             <option value="F">Female</option>
-        </select>
+        </select><br><br>
         <input type="submit" value="Save" name="save-student">
     </form>
   <!-- <?php            
