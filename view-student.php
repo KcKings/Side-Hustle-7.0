@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <a href="/all-students.php">All Students</a>
+    <a href="./all-students.php">All Students</a>
     <?php
     include 'included.php';
 

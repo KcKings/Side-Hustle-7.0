@@ -9,7 +9,6 @@
 <body>
 <?php
     $connection = mysqli_connect("localhost", "root", "", "alexdb");
-
 ?>
 </body>
 </html>
