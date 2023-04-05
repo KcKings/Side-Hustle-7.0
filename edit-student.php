@@ -24,25 +24,26 @@
 
     ?>
     <h2>Edit Student Details</h2>
-    <form action="process.php" method="post">
-        <input type="hidden" value="<?php echo '$id' ?>" name="student-id">
+    <form action="process-update.php" method="post">
+
+        <input type="hidden" value="<?php echo $id ?>" name="student_id">
         <label for="">Name:</label>
-        <input type="text" name="student-name" value="<?= $student_details['name'] ?>"><br><br>
+        <input type="text" name="student_name" value="<?php echo $student_details['name'] ?>"><br><br>
 
         <label for="">Age:</label>
-        <input type="text" name="student-age" value="<?= $student_details['age'] ?>"><br><br>
+        <input type="text" name="student_age" value="<?php echo $student_details['age'] ?>"><br><br>
 
         <label for="">Gender</label>
-        <select name="student-gender" id="" required>
+        <select name="student_gender" required>
             <option value="">Select Gender</option>
             <option value="M" <?php if ($student_details['gender'] === 'M') {
                                     echo "selected";
                                 } ?>>Male</option>
             <option value="F" <?php if ($student_details['gender'] === 'F') {
-                                    echo "selected";
+                                echo "selected";
                                 } ?>>Female</option>
         </select><br><br>
-        <input type="submit" value="Update" name="edit-student">
+        <input type="submit" value="Update" name="edit_student">
     </form>
 
 

@@ -11,7 +11,7 @@
         include 'included.php'
     ?>
     <h2>Students</h2>
-    <form action="process.php" method="post">
+    <form action="process-save.php" method="post">
         <label for="">Name:</label>
         <input type="text" name="student-name" id="" required><br><br>
         <label for="">Age:</label>
