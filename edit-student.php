@@ -1,3 +1,6 @@
+<?php
+    require "session-start.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +27,7 @@
 
     ?>
     <h2>Edit Student Details</h2>
-    <form action="process-update.php" method="post">
+    <form action="process.php" method="post">
 
         <input type="hidden" value="<?php echo $id ?>" name="student_id">
         <label for="">Name:</label>
@@ -40,10 +43,10 @@
                                     echo "selected";
                                 } ?>>Male</option>
             <option value="F" <?php if ($student_details['gender'] === 'F') {
-                                echo "selected";
+                                    echo "selected";
                                 } ?>>Female</option>
         </select><br><br>
-        <input type="submit" value="Update" name="edit_student">
+        <input type="submit" value="Update" name="update_student">
     </form>
 
 

@@ -1,3 +1,7 @@
+<?php
+    require "session-start.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,3 +1,8 @@
+
+<?php
+    require "session-start.php"
+?>
+
 <?php
 require 'included.php';
 

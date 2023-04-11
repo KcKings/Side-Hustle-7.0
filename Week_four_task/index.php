@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>ADMIN Login</title>
 </head>
 <body>
 <?php
-    include 'included.php';
+    include 'connectiondb.php';
   ?>
 
-  <h2>Login</h2>
+  <h2>Login</h2><br><br>
   <form action="process.php" method="post">
-      <label for="email"></label>
-      <input type="email" name="email" required >
+      <label for="username"></label>
+      <input type="username" name="username" required >
       <br><br>
 
       <label for="password"></label>

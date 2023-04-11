@@ -1,3 +1,6 @@
+<?php
+    require "session-start.php"
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +17,7 @@
     $students = mysqli_query($connection, 'SELECT * FROM  students');
     ?>
     <a href="./createstudent.php">Add New Student</a>
+    <a href="logout.php">Log Out</a>
     <br><br>
     <h2>All Students</h2>
     <table>
